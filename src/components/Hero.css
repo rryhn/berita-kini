@@ -1,0 +1,76 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 40px;
+  background: #fff;
+  border-radius: 16px;
+  position: relative;
+}
+
+.hero-left {
+  flex: 1;
+  text-align: left; /* 🔥 INI KUNCI */
+}
+
+/* pastikan semua ikut kiri */
+.hero-left h1,
+.desc,
+.date,
+.link {
+  text-align: left;
+}
+
+.tag {
+  color: #007bff;
+  font-size: 14px;
+}
+
+.hero-left h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.desc {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.date {
+  color: #888;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.link {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.hero-right img {
+  width: 420px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* NAV */
+.nav {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.nav button {
+  border: none;
+  background: #eee;
+  padding: 6px 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,71 @@
+/* NAVBAR CONTAINER */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* LOGO */
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: 0.5px;
+}
+
+.logo span {
+  color: #007bff;
+}
+
+/* MENU */
+.menu {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+/* ITEM */
+.menu li {
+  position: relative;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.menu li:hover {
+  color: #007bff;
+}
+
+/* GARIS ANIMASI */
+.menu li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #007bff;
+  transition: 0.3s;
+}
+
+.menu li:hover::after {
+  width: 100%;
+}
+
+/* ACTIVE MENU */
+.menu .active {
+  color: #007bff;
+  font-weight: 600;
+}
+
+.menu .active::after {
+  width: 100%;
+}
